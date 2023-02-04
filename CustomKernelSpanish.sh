@@ -87,8 +87,6 @@ else
         Filecreation="${red} ${bold} Fallo ${reset}"
 fi
 
-
-
 end=`date +%s`
 runtime=$((end-start))
 
