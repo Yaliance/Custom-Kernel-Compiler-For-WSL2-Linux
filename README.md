@@ -11,7 +11,7 @@ Compiles the Kernel modules
 Copies the Kernel and .wslconf file to your windows folder so it is ready to be used 
 
 # Usage
-clone the repository using ```git clone https://github.com/Yaliance/WSLCustomKernelCompiler```
+clone the repository using ```git clone https://github.com/Yaliance/WSLCustomKernelCompiler.git```
 then just follow this simple commands
 ```bash
 cd WSLCustomKernelCompiler/
@@ -38,7 +38,7 @@ Un Script de automatizacion para la creacion de Kernels para WSL personalizados
 El script te guía a través del proceso de compilación de un kernel personalizado para WSL. Instala todas las dependencias. Clona el repositorio oficial de Kernel para WSL. Muestra el menú de personalización del kernel de WSL. Compila los módulos del Kernel. Copia el Kernel y el archivo .wslconf a tu carpeta de Windows para que esté listo para usarse.
 
 #Uso
-Clonar el repositorio usando ```git clone https://github.com/Yaliance/WSLCustomKernelCompiler``` 
+Clonar el repositorio usando ```git clone https://github.com/Yaliance/WSLCustomKernelCompiler.git``` 
 Luego simplemente hay que seguir los commandos
 ```bash
 cd WSLCustomKernelCompiler/
