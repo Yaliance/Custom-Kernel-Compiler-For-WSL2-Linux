@@ -25,4 +25,4 @@ echo %USERNAME%
 
 # Use
 The main usage I gave to compiling a custom kernel is for me to be able to compile drivers using make and load them using modprobe so i can use wifi cards over USBIP.
-Compiling your custom kernel for WSL will allow you to many more things but that depends on your needs.
+Compiling your custom kernel for WSL will allow you to do many more things but that depends on your needs.
