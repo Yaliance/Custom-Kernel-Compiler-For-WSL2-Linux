@@ -98,7 +98,7 @@ echo -e "\n Compilacion de kernel : $Kernelcomp"
 echo -e "\n Kernel copiado a Windows : $Filecreation"
 
 if [ "$Filecreation" == "${green} ${bold} OK ${reset}" ]; then
-        echo -e "\n\n\n ${green} ${bold} Todo listo ahora solo copia los archivos de la carpeta Customer Kernel en Windows a la raiz de la carpeta de usuario "
+        echo -e "\n\n\n ${green} ${bold} Todo listo ahora solo copia los archivos de la carpeta Custom Kernel en Windows a la raiz de la carpeta de usuario "
 else
         echo -e "\n\n\n ${red} Ocurrio un error, por favor abra un issue para reportarlo ${reset} \n\n\n"
         exit 9999
