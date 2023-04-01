@@ -30,7 +30,8 @@ directory=~/CustomKernel
 File=/mnt/c/Users/$winusr/CustomKernel/bzImage
 wslfile=/mnt/c/Users/$winusr/CustomKernel/.wslconfig
 echo -e "\n\n\n\n ${blue} ${bold}---> Ahora se instalaran los componentes necesarios <--- ${reset} \n\n\n"
-sudo apt install flex bison build-essential libelf-dev libncurses-dev  libssl-dev -y
+sudo apt update
+sudo apt install flex bison build-essential libelf-dev libncurses-dev  libssl-dev bc -y
 clear
 if [ -d "$directory" ]; then
 	cd CustomKernel
