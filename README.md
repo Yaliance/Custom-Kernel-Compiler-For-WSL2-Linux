@@ -16,8 +16,13 @@ then just follow this simple commands
 ```bash
 cd WSLCustomKernelCompiler/
 ```
+Currently the script needs to be converted to unix format since it was uploaded using Windows, for that use the following command:
 ```bash
-sudo CustomKernelSpanish.sh
+sudo dos2unix CustomKernel.sh
+```
+then just run it using:
+```bash
+sudo bash CustomKernel.sh
 ```
 the script will ask you for your windows user name so it can copy the files to the right folder. you can get the windows user name by opening cmd and using the command
 ```bash
@@ -43,8 +48,13 @@ Luego simplemente hay que seguir los commandos
 ```bash
 cd WSLCustomKernelCompiler/
 ```
+Por el momento se debe convertir el script al formato unix ya que fue subido usando Windows. Puedes convertirlo usando el siguiente comando:
+```bash
+sudo dos2unix CustomKernelSpanish.sh
 ```
-sudo CustomKernelSpanish.sh
+Luego solo ejecutar usando:
+```
+sudo bash CustomKernelSpanish.sh
 ```
 el script te pedirá tu nombre de usuario de Windows para poder copiar los archivos en la carpeta correcta. puedes obtener el nombre de usuario de Windows abriendo cmd y usando el comando
 ```bash
