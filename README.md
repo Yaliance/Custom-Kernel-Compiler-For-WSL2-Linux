@@ -28,12 +28,17 @@ the script will ask you for your windows user name so it can copy the files to t
 ```bash
 echo %USERNAME%
 ```
-By default the file bzImage (kernel) will be copied to a folder called "CustomKernel" inside your Windows user folder (C:/Users/yourusername/) along with a .wslconfig file.
-To start using your new kernel you will just have to copy both files to the root of the windows user folder (C:/Users/yourusername/) and execute the following command on cmd:
+
+now we need to shutdown the WSL instance to avoid any file corruption. For that just execute the following command on cmd:
 ```bash
 wsl.exe --shutdown
 ```
-this way you will restart WSL and will boot using your custom kernel, it may take a little longer to start for the first time with the new kernel.
+
+To start using your new kernel you will just have to copy both files (bzImage & .wslconfig) to the root of the Windows user folder (C:/Users/yourusername/). 
+
+By default the file bzImage (kernel) will be copied to a folder called "CustomKernel" inside your Windows user folder (C:/Users/yourusername/) along with the .wslconfig file.
+
+After moving both files to your user folder and starting WSL again it will boot using your custom kernel, it may take a little longer to start for the first time with the new kernel so just be aware.
 
 Enjoy!
 
@@ -68,13 +73,18 @@ el script te pedirá tu nombre de usuario de Windows para poder copiar los archi
 ```bash
 echo %USERNAME%
 ```
-Por defecto el archivo bzImage(kernel) sera copiado a la carpeta "CustomKernel" dentro de la carpeta raiz de usuario en windows(C:/Usuarios/tu-nombre-de-usuario/) junto con un archive .wslconfig
-Para comenzar a utilizar tu nuevo kernel sera necesario copiar los dos archivos a la carpeta raiz de usuario en windows(C:/Usuarios/tu-nombre-de-usuario/) y ejecutar el siguiente comando en cmd:
+
+Y ahora hay que apagar la instancia de WSL para evitar corrupcion. puedes hacerlo ejecutando el siguiente comando en cmd:
 
 ```bash
 wsl.exe --shutdown
 ```
-De esta manera reiniciaras WSL e iniciara usando tu nuevo kernel personalizado, puede que tome un poco mas de tiempo en iniciar la primera vez usando el nuevo kernel.
+
+Para comenzar a utilizar tu nuevo kernel sera necesario copiar los dos archivos (bzImage & .wslconfig) a la carpeta raiz de usuario en windows(C:/Usuarios/tu-nombre-de-usuario/)
+
+Por defecto el archivo bzImage(kernel) sera copiado a la carpeta "CustomKernel" dentro de la carpeta raiz de usuario en windows (C:/Usuarios/tu-nombre-de-usuario/) junto con un archive .wslconfig
+
+Despues de haber copiado ambos archivos solo falta iniciar WSL denuevo y esta vez iniciara usando tu nuevo kernel personalizado, considera que puede que tome un poco mas de tiempo en iniciar la primera vez usando el nuevo kernel.
 
 Que lo disfrutes!
 
