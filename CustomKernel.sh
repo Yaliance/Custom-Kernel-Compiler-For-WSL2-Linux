@@ -57,7 +57,7 @@ make KERNELRELEASE=$KERNELRELEASE modules -j 4
 echo -e "\n\n\n ${blue} ${bold}---> Now the modules will be installed < ---${reset} \n\n\n"
 sudo make KERNELRELEASE=$KERNELRELEASE modules_install 
 sudo mount -t debugfs debugfs /sys/kernel/debug
-echo -e "\n\n\n ${blue} ${bold}---> Now he script will copy the files created to your windows user folder < ---${reset} \n\n\n"
+echo -e "\n\n\n ${blue} ${bold}---> Now the script will copy the files created to your windows user folder < ---${reset} \n\n\n"
 if [ -d "/mnt/c/Users/$winusr/CustomKernel" ]; then
 	sudo cp arch/x86/boot/bzImage /mnt/c/Users/$winusr/CustomKernel/bzImage
 else
