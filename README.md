@@ -28,6 +28,14 @@ the script will ask you for your windows user name so it can copy the files to t
 ```bash
 echo %USERNAME%
 ```
+By default the file bzImage (kernel) will be copied to a folder called "CustomKernel" inside your Windows user folder (C:/Users/yourusername/) along with a .wslconfig file.
+To start using your new kernel you will just have to copy both files to the root of the windows user folder (C:/Users/yourusername/) and execute the following command on cmd:
+```bash
+wsl.exe --shutdown
+```
+this way you will restart WSL and will boot using your custom kernel, it may take a little longer to start for the first time with the new kernel.
+
+Enjoy!
 
 # Use
 The main usage I gave to compiling a custom kernel is for me to be able to compile drivers using make and load them using modprobe so i can use wifi cards over USBIP.
@@ -60,6 +68,16 @@ el script te pedirá tu nombre de usuario de Windows para poder copiar los archi
 ```bash
 echo %USERNAME%
 ```
+Por defecto el archivo bzImage(kernel) sera copiado a la carpeta "CustomKernel" dentro de la carpeta raiz de usuario en windows(C:/Usuarios/tu-nombre-de-usuario/) junto con un archive .wslconfig
+Para comenzar a utilizar tu nuevo kernel sera necesario copiar los dos archivos a la carpeta raiz de usuario en windows(C:/Usuarios/tu-nombre-de-usuario/) y ejecutar el siguiente comando en cmd:
+
+```bash
+wsl.exe --shutdown
+```
+De esta manera reiniciaras WSL e iniciara usando tu nuevo kernel personalizado, puede que tome un poco mas de tiempo en iniciar la primera vez usando el nuevo kernel.
+
+Que lo disfrutes!
+
 #Proposito
 El uso principal que le di a la compilación de un kernel personalizado es poder compilar controladores usando make y cargarlos usando modprobe para poder usar tarjetas wifi a través de USBIP. Compilar tu kernel personalizado para WSL te permitirá hacer muchas más cosas, pero eso depende de tus necesidades.
 </p>
